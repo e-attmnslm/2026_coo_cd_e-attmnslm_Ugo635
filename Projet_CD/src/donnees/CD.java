@@ -97,5 +97,19 @@ public class CD {
 		return (resultat);
 	}
 
-	// TODO 
+	// TODO
+	public boolean compareTo(CD cd) {
+		// ...
+	}
+	public boolean etreAvantAlbum(CD cd2) {
+		return this.compareTo(cd2);
+
+
+
+
+		if (this.nomCD.compareTo(cd2.nomCD)) {
+			return true;
+		}
+		return false;
+	}
 }
