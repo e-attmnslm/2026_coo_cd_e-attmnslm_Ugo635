@@ -98,9 +98,7 @@ public class CD {
 	}
 
 	// TODO
-	public boolean compareTo(CD cd) {
-		// ...
-	}
+
 	public boolean etreAvantAlbum(CD cd2) {
 		return this.compareTo(cd2);
 
