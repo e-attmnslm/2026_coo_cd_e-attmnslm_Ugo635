@@ -102,4 +102,7 @@ public class CD {
 	public boolean etreAvantAlbum(CD cd2) {
 		return this.nomCD.compareTo(cd2.nomCD) <= 0; // Vrai si égal ou avant
 	}
+	public boolean etreAvantArtiste(CD cd2) {
+		return this.nomArtiste.compareTo(cd2.nomArtiste) <= 0; // Vrai si égal ou avant
+	}
 }

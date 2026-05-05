@@ -2,7 +2,7 @@ package main;
 
 import java.io.IOException;
 
-import donnees.CD;
+import donnees.*;
 import XML.ChargeurCD;
 
 /**
@@ -18,7 +18,7 @@ public class MainChargeurCD {
 	 * @throws IOException
 	 *             si fichier inexistant
 	 */
-	public static void main(String args[]) throws IOException {
+	public static void main(String[] args) throws IOException {
 		String nomFichier = "musicbrainz/0117b967-d066-4ce1-bf7f-f2b34c063ed3.xml";
 		ChargeurCD charge = new ChargeurCD(nomFichier);
 		CD c = charge.chargerCD();
