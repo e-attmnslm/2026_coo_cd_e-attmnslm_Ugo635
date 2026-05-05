@@ -69,16 +69,24 @@ public class Magasin {
 	}
 
 	// TODO  ajouter une methode de tri
+
 	public void trierAlbum(){
 		int taille = listeCds.size();
 		for(int i=0;i<taille;i++){
+			CD cdSelection=null;
+			int indiceSelection=-1;
 			CD cd_i = listeCds.get(i);
 			for (int j=i+1;j<taille;j++){
 				CD cd_j= listeCds.get(j);
 				if (cd_j.etreAvantAlbum(cd_i)){
-
+					cdSelection = cd_j;
+					indiceSelection = j;
 				}
 			}
+
+			this.listeCds.set(indiceSelection,cd_i);
+			this.listeCds.set(i,cdSelection);
+
 		}
 	}
 }
